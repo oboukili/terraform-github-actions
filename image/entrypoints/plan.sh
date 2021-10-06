@@ -88,5 +88,7 @@ if [[ -n "$PLAN_OUT" ]]; then
 fi
 
 debug_cmd ls -la "$GITHUB_WORKSPACE/$WORKSPACE_TMP_DIR"
-chown -R --reference "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/$WORKSPACE_TMP_DIR"
+debug_cmd ls -la "$GITHUB_WORKSPACE"
+chown -R --reference "$GITHUB_WORKSPACE" "$GITHUB_WORKSPACE/.dflook-terraform-github-actions"
 debug_cmd ls -la "$GITHUB_WORKSPACE/$WORKSPACE_TMP_DIR"
+debug_cmd ls -la "$GITHUB_WORKSPACE"
